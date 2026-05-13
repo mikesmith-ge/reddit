@@ -1,0 +1,11 @@
+name: Reddit App
+on: workflow_dispatch
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -X POST https://www.reddit.com/api/v1/app \
+            -u "Previous_Editor2419:8c8Wdkbc_1M990" \
+            -d "name=kurwa-lurker&app_type=script&description=personal+tool&about_url=https://bobr.tools&redirect_uri=http://localhost:8080" \
+            -v
